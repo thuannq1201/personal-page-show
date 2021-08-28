@@ -1,0 +1,30 @@
+/* destop */
+@media (min-width: 1025px) {
+
+}
+
+/* taplet */
+@media (min-width: 740px)and (max-width: 1024px){
+    #header-container{
+        background: #F5A05C url(/figma-cut-html/homepage-using/asset/images/shape-bg.png) center / cover no-repeat;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /* .hero-image{
+        margin-bottom: 200px;
+    }
+
+    .hero-content{
+        margin-bottom:150px;
+    }
+
+    .hero-content a{
+        margin-top: 100px;
+    } */
+
+}

@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+#main{
+    width: 100%;
+    display: block;
+}
+
+/* navigation */
+#nav-container{
+    background: #FFFFFA;
+    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.1);
+    height: 74px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#nav-container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#nav-container nav .logo{
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+    margin-left: 80px;
+}
+
+/* navigation- item */
+
+#nav-container nav .nav-items{
+    display: flex;
+}
+
+ul.nav-items li{
+    margin-right: 100px;
+    font-size: 20px;
+    position: relative;
+}
+
+ul.nav-items li a{
+    color: #000000;
+
+}
+
+ul.nav-items li a::after{
+    content: " ";
+    height: 5px;
+    width: 0px;
+    left: 0px;
+    bottom: -5px;
+    background-color: #F5A05C;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.nav-items li a:hover::after{
+    width: 50%;
+    transform: translate(100%);
+}
+
+
+/* header */
+#header-container{
+    background: #F5A05C url(/figma-cut-html/homepage-using/asset/images/shape-bg.png) right / contain no-repeat;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header-image */
+
+.hero-image img{
+    width: 450px;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.hero-image img:hover{
+    transform: rotate(-8deg);
+}
+
+.hero-image .photo-bg{
+    width: 450px;
+    height: 355px;
+    background-color: #01847F;
+    position: relative;
+    margin-left: 10px;
+}
+
+/* header-content */
+.hero-content{
+    line-height: 1.4;
+}
+
+.hero-content h1{
+    font-weight: bold;
+    font-size: 55px;
+    color: #021718;
+}
+
+.hero-content p{
+    font-size: 20px;
+    color: #000000;
+    width: 447px;
+    margin-bottom: 25px;
+}
+
+.hero-content a{
+    padding: 10px 30px;
+    background-color: #01847F;
+    color: #fff;
+    border-radius: 20px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+.hero-content a:hover{
+    transform: translateY(-8px);
+}
+
+/* Social-logo */
+.social-logo {
+    margin-top: 35px;
+    position: absolute;
+}
+
+.social-logo a{
+    margin-left: 30px;
+}
+
+.social-logo a:nth-child(1){
+    margin-left: 0;
+}
+
+.social-logo a:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
